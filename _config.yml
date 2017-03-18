@@ -1,13 +1,17 @@
 # Site settings
-title: Good Clean Read
-tag_text: Good Clean Read
-description: A responsive template for publishing single-page websites, articles that are easy on the eyes
-url: "http://127.0.0.1:4000"
+title: Niklas Lindblad
+tag_text: Niklas Lindblad
+description: A blog about software engingeering, programming and agile.
+url: "http://niklind.github.io"
 baseurl: ""
 
 font-awesome-include: true # make this false if you don't need font-awesome
+social-sharing-include: false # make this false if you don't need rrssb
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 exclude: ["README.md"]
