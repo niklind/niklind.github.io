@@ -6,22 +6,22 @@
   <meta name="description" content="{{ site.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="{{ site.url }}/css/normalize.css">
-  <link rel="stylesheet" href="{{ site.url }}/css/site.css">
-  <link rel="stylesheet" href="{{ site.url }}/css/syntax.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
   {% if site.font-awesome %}<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">{% endif %}
-  <link rel="canonical" href="{{ site.url }}" />
+  <link rel="canonical" href="{{ site.baseurl }}" />
 </head>
 <body>
   <div class="container">
     <article>
       <header>
-        <h1><a href="{{ site.url }}">{{ site.header }}</a></h1>
+        <h1><a href="{{ site.baseurl }}">{{ site.header }}</a></h1>
       </header>
       {{ content }}
     </article>
     {% include footer.html %}
-    <script src="{{ site.url }}/scripts/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/scripts/jquery.min.js"></script>
  </div>
 </body>
 </html>

@@ -4,7 +4,7 @@ header: Niklas Lindblad
 description: A blog about software engingeering, programming and agile development.
 url: "http://niklind.github.io"
 permalink: /:title/
-#baseurl: "http://niklind.github.io"
+baseurl: ""
 
 font-awesome: true # make this false if you don't need font-awesome
 social-sharing: false # make this false if you don't need rrssb
