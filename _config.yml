@@ -1,17 +1,15 @@
 # Site settings
 title: Niklas Lindblad
-tag_text: Niklas Lindblad
-description: A blog about software engingeering, programming and agile.
+header: Niklas Lindblad
+description: A blog about software engingeering, programming and agile development.
 url: "http://niklind.github.io"
-baseurl: ""
+permalink: /:title/
+#baseurl: "http://niklind.github.io"
 
-font-awesome-include: true # make this false if you don't need font-awesome
-social-sharing-include: false # make this false if you don't need rrssb
+font-awesome: true # make this false if you don't need font-awesome
+social-sharing: false # make this false if you don't need rrssb
 
 # Build settings
 markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
 
 exclude: ["README.md"]

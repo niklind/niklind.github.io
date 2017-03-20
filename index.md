@@ -1,8 +1,17 @@
 ---
-layout: default
+layout: index
+title:  "Niklas Lindblad"
+date:   2017-03-20 21:00:00 -0600
+categories: introduction home
 ---
 
 ## A Jekyll template for publishing single-page websites and articles that are incredibly readable and fully responsive
+
+### Posts
+
+{% for post in site.posts %}
+  <p><a href="{{ post.url }}">{{ post.date | date_to_string }} - {{ post.title }}</a></p>
+{% endfor %}
 
 ### Nice, clean, reading!
 
@@ -28,8 +37,6 @@ Simply add the following line anywhere in your markdown:
 </code></pre>
 
 and get a nice responsive sharing ribbon.
-
-{% include sharing.html %}
 
 Add this at the bottom, or the top, or between every other paragraph if you're desprate for social validation.
 
