@@ -18,7 +18,7 @@ That way you can test your system without using any real services, which increas
 
 ### When to use a service virtualization tool
 
-A stub is a minimal implementation that works as a stateful substitute, often with hard-coded values. A mock is more like an empty interface that verifies behaviour, with data set up manually for each test. Mocks are typically used for cases where the behaviour is more complex, but both of them work perfectly well in most cases for removing dependencies.
+A service virtualization tool is often used as a complement or replacement for a mock or a stub. A stub is a minimal implementation that works as a stateful substitute, often with hard-coded values. A mock is more like an empty interface that verifies behaviour, with data set up manually for each test. Mocks are typically used for cases where the behaviour is more complex, but both of them work perfectly well in most cases for removing dependencies.
 
 When you are dealing with many service interactions in a test, as can be the case with microservices, setting up the data manually for each test can be tough. Recording the interactions and replaying them becomes a good option, and service virtualization does that for you.
 
@@ -42,7 +42,7 @@ Another interesting service you can use, besides [jsontest](http://time.jsontest
 
 ### A few gotchas
 
-_Raw recorded data only gets you so far_. Timestamps, ids and similar that are unique for each request must be excluded from the request matching manually. Also, simulating requests to the same URL that generate different responses tends to be tricky. So far, your best option seems to be using the DSL and/or different recordings for each test case. I suspect this may be a future focus area.
+_Raw recorded data only gets you so far_. Timestamps, ids and similar that are unique for each request must be excluded from the request matching manually. Also, simulating requests to a URL that generates different responses based on some state tends to be tricky. So far, your best option seems to be using the DSL and/or different recordings for each test case. I suspect this may be a future focus area.
 
 The hoverctl wrapper works well most of the time, but I've managed to generate recordings that couldn't be imported again, that fail silently. Same thing when using a load testing tool that I suspect crashed the underlying process. It's usually visible in the logs though, but you have to look for it.
 
