@@ -1,8 +1,8 @@
 # Site settings
-title: Niklas Lindblad
+title: Niklas Lindblad | Blog
 header: Niklas Lindblad
-description: A blog about software engingeering, programming and agile development.
-url: "http://niklind.github.io"
+description: A blog about software engineering, tools and agile practices.
+url: "http://niklind.github.io/"
 permalink: /:title/
 baseurl: ""
 
