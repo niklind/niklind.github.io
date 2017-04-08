@@ -14,7 +14,7 @@ title:  "Emulating services using HoverFly"
 
 That way you can test your system without using any real services, which increases the reliability of the tests. 
 
-<img src="/images/hoverfly_simulate.png" alt="Capture sequence">
+![Capture sequence](/images/hoverfly_simulate.png)
 
 ### When to use a service virtualization tool
 

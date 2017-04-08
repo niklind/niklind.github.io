@@ -2,7 +2,7 @@
 title: Niklas Lindblad | Blog
 header: Niklas Lindblad
 description: A blog about software engineering, tools and agile practices.
-url: "http://niklind.github.io/"
+url: ""
 permalink: /:title/
 baseurl: ""
 
@@ -11,5 +11,13 @@ social-sharing: false # make this false if you don't need rrssb
 
 # Build settings
 markdown: kramdown
+
+navigation:
+  - title: "GitHub"
+    url: "https://github.com/niklind"
+  - title: "Twitter"
+    url: "https://twitter.com/niklind"
+  - title: "LinkedIn"
+    url: "https://www.linkedin.com/in/niklaslindblad"
 
 exclude: ["README.md"]
