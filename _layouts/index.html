@@ -22,9 +22,7 @@
 <body>
   <div class="container">
     <article>
-      <header>
-        <h1><a href="{{ site.baseurl }}">{{ site.header }}</a></h1>
-      </header>
+      {% include header.html %}
       {{ content }}
     </article>
     {% include footer.html %}
