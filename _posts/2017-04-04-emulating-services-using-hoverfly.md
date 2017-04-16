@@ -10,9 +10,9 @@ title:  "Emulating services using HoverFly"
 
 ## What is HoverFly?
 
-[HoverFly](https://hoverfly.io/) is a [service virtualization](https://en.wikipedia.org/wiki/Service_virtualization) tool that can emulate other services by recording requests and responses and then playing them back. It's set as a [proxy](https://en.wikipedia.org/wiki/Proxy_server) between your system under test and the services you want to emulate. 
+[HoverFly](https://hoverfly.io/) is a [service virtualization](https://en.wikipedia.org/wiki/Service_virtualization) tool that can emulate other services by recording requests and responses and then playing them back. It's set as a [proxy](https://en.wikipedia.org/wiki/Proxy_server) between your system and the services you want to emulate. 
 
-That way you can test your system without using any real services, which increases the reliability of the tests. 
+That way you can for instance test your system without using real dependencies, which increases the reliability of the tests.
 
 ![Capture sequence](/images/hoverfly_simulate.png)
 
