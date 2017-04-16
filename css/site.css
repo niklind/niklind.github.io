@@ -192,17 +192,11 @@ pre > code {
   padding: 0;
 }
 
-#profile {
-  display: table;
-}
-
-.profile-row {
-  display: table-row;
-}
-
 #profile-img {
   min-width: 25px;
   min-height: 25px;
+  max-width: 150px;
+  max-height: 150px;
   -webkit-filter: grayscale(100%);
   border-radius: 50%;
   -webkit-transform: rotate(-10deg);
@@ -231,10 +225,8 @@ pre > code {
       transform: rotate(0deg);
 }
 
-.profile-text {
-  display: table-cell; 
-  vertical-align: middle; 
-  padding-left: 60px;
+#profile-links {
+  text-align: center;
 }
 
 .shadow {

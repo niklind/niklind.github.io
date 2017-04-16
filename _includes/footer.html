@@ -1,18 +1,18 @@
 <footer>
 	<hr>
-	<p id="profile">
-		<span class="profile-row">
-			<img alt="Niklas Lindblad" src="/images/niklas.jpg" id="profile-img" class="shadow" />
-			<span class="profile-text">Hi! Nice to see you found my blog. I'm Niklas, a sofware developer working at <a href="http://www.squeed.com/">Squeed</a>. <br/><br/> I'll be posting content related to software engineering, tools and agile practices, so stay tuned!</span>
-		</span>
-		<span class="profile-row">
-			<span style="display: table-cell;"></span>
-			<span class="profile-text">
-				{% for item in site.navigation %}
-		            <a href="{{ item.url }}">{{ item.title }}</a> &nbsp;
-		        {% endfor %}
-			</span>
-		</span>
+	<p>
+		<img alt="Niklas Lindblad" src="/images/niklas.jpg" id="profile-img" class="shadow" /> 
+	</p>
+	<p id="profile-links">
+		{% for item in site.navigation %}
+	        <a href="{{ item.url }}">{{ item.title }}</a> &nbsp;
+	    {% endfor %}
+    </p>
+	<p>
+		Hi! Nice to see you found my blog. I'm Niklas, a sofware developer working at <a href="http://www.squeed.com/">Squeed</a>.
+	</p>
+	<p>
+		I'll be posting content related to software engineering, tools and agile practices, so stay tuned!
 	</p>
 	<hr>
 	<p>This site is based on <a href="https://adueck.github.io/good-clean-read">Good Clean Read</a>, by <a href="https://github.com/adueck">Adam Dueck</a></p>
