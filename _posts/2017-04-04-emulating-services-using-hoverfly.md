@@ -3,12 +3,12 @@ layout: post
 title:  "Emulating services using HoverFly"
 ---
 
-### Contents
+## Contents
 
 * Table of Contents
 {:toc}
 
-### What is HoverFly?
+## What is HoverFly?
 
 [HoverFly](https://hoverfly.io/) is a [service virtualization](https://en.wikipedia.org/wiki/Service_virtualization) tool that can emulate other services by recording requests and responses and then playing them back. It's set as a [proxy](https://en.wikipedia.org/wiki/Proxy_server) between your system under test and the services you want to emulate. 
 
@@ -16,7 +16,7 @@ That way you can test your system without using any real services, which increas
 
 ![Capture sequence](/images/hoverfly_simulate.png)
 
-### When to use it
+## When to use it
 
 A service virtualization tool is often used as a complement or replacement for a mock or a stub. In my personal opinion, mocks work best when there are complex interactions with a few services and stubs are effective when there are simple interactions with a small amount of services. 
 
@@ -26,7 +26,7 @@ Emulating a flaky or unstable dependent service by injecting faults, latency and
 
 You can also use service virtualization as a tactical approach to working with services that don't exist yet, or to extend existing services with new functionality before it's available.
 
-### Getting started
+## Getting started
 
 [The tutorials of the HoverFly documentation](https://docs.hoverfly.io/en/latest/pages/tutorials/tutorials.html) are quite good, and provide excellent examples of most use cases. I'd suggest starting with reading up on the [key concepts](https://docs.hoverfly.io/en/latest/pages/keyconcepts/keyconcepts.html), then following the tutorials for: 
 
@@ -38,7 +38,7 @@ Another interesting service you can use, besides [jsontest](http://time.jsontest
 
 **Note:** Both the product itself and the documentation is updated very frequently at this point though, so stay tuned! At the time this article was published, the version was 0.11. 
 
-### A few gotchas
+## A few gotchas
 
 _Raw recorded data only gets you so far_. Timestamps, ids and similar that are unique for each request must be excluded from the request matching manually. Also, simulating requests to a URL that generates different responses based on some state tends to be tricky. So far, your best option seems to be using the DSL to modify the responses and/or using different recordings for each test case. I suspect this may be a future focus area.
 
@@ -46,7 +46,7 @@ The hoverctl wrapper works well most of the time, but I've managed to generate r
 
 The Java tools don't seem to print the contents of the HoverFly logs in the output, only status messages. Therefore, e.g. request misses can be hard to detect. Controlling a remote, already running HoverFly instance in Java has also proven unreliable at times using the built in classes - the most stable way seems to be using the REST API directly.
 
-### Alternatives
+## Alternatives
 
 * [Wiremock](http://wiremock.org/) - Another service virtualization tool.
 * [MockRestServiceServer](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/test/web/client/MockRestServiceServer.html) - A Spring Mock Service Template
