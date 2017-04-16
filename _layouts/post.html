@@ -6,19 +6,19 @@
   <meta name="description" content="{{ site.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/site.css">
-  <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
   {% if site.font-awesome %}<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">{% endif %}
-  {% if site.social-sharing %}<link rel="stylesheet" href="/css/rrssb.css">{% endif %}
+  {% if site.social-sharing %}<link rel="stylesheet" href="{{ site.baseurl }}/css/rrssb.css">{% endif %}
   <link rel="canonical" href="{{ site.baseurl }}" />
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon-114x114.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon-114x114.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon-144x144.png">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon-144x144.png">
-  <link rel="icon" type="image/x-icon" href="favicon.png">
-  <link rel="icon" type="image/vnd.microsoft.icon" sizes="32x32 48x48" href="favicon.ico">
-  <link rel="icon" sizes="128x128" href="favicon.icns">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.baseurl }}/favicon-114x114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/favicon-114x114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/favicon-144x144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/favicon-144x144.png">
+  <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.png">
+  <link rel="icon" type="image/vnd.microsoft.icon" sizes="32x32 48x48" href="{{ site.baseurl }}/favicon.ico">
+  <link rel="icon" sizes="128x128" href="{{ site.baseurl }}/favicon.icns">
 </head>
 <body>
   <div class="container">
@@ -28,8 +28,8 @@
     </article>
     {% if site.social-sharing %}{% include sharing.html %}{% endif %}
     {% include footer.html %}
-    <script src="/scripts/jquery.min.js"></script>
-    {% if site.social-sharing %}<script src="/scripts/rrssb.min.js"></script>{% endif %}
+    <script src="{{ site.baseurl }}/scripts/jquery.min.js"></script>
+    {% if site.social-sharing %}<script src="{{ site.baseurl }}/scripts/rrssb.min.js"></script>{% endif %}
   </div>
 </body>
 </html>
