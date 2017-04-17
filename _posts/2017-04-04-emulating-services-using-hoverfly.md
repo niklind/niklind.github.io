@@ -4,6 +4,7 @@ title:  "Emulating services using HoverFly"
 ---
 
 ## Contents
+{: .no_toc}
 
 * Table of Contents
 {:toc}

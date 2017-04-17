@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="{{ site.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}</title>
+  <title>{{ site.title }} | {{ page.title }}</title>
   <link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
@@ -24,7 +24,7 @@
   <div class="container">
     <article>
       {% include header.html %}
-      <p><a href="{{ site.baseurl }}/">Back to the blog</a></p>
+      <p><a href="{{ site.baseurl }}/"><i class="fa fa-angle-double-left"></i>&nbsp;&nbsp;Back to the blog</a></p>
       {{ content }}
     </article>
     {% if site.social-sharing %}{% include sharing.html %}{% endif %}
