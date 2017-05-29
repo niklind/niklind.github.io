@@ -172,6 +172,10 @@ pre > code {
   padding: 0;
 }
 
+#profile-img-holder {
+  text-align: center;
+}
+
 #profile-img {
   min-width: 25px;
   min-height: 25px;
