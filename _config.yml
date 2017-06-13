@@ -12,6 +12,9 @@ social-sharing: false # make this false if you don't need rrssb
 # Build settings
 markdown: kramdown
 
+sass:
+    style: compressed
+
 navigation:
   - title: "GitHub"
     url: "https://github.com/niklind"
