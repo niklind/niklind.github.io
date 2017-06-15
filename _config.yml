@@ -6,8 +6,9 @@ url: ""
 permalink: /:title/
 baseurl: ""
 
-font-awesome: true # make this false if you don't need font-awesome
+font-awesome: false # make this false if you don't need font-awesome
 social-sharing: false # make this false if you don't need rrssb
+jquery: false
 
 # Build settings
 markdown: kramdown
