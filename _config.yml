@@ -25,3 +25,7 @@ navigation:
     url: "https://www.linkedin.com/in/niklaslindblad"
 
 exclude: ["README.md"]
+
+plugins: [jekyll-sitemap, jekyll-seo-tag]
+
+#plugins_dir: [jekyll-sitemap, jekyll-seo-tag]
