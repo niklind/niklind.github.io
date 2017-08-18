@@ -2,9 +2,7 @@
 title: Niklas Lindblad
 header: Niklas Lindblad
 description: A blog about software engineering, tools and agile practices.
-url: ""
 permalink: /:title/
-baseurl: ""
 
 font-awesome: false # make this false if you don't need font-awesome
 social-sharing: false # make this false if you don't need rrssb
@@ -26,6 +24,4 @@ navigation:
 
 exclude: ["README.md"]
 
-plugins: [jekyll-sitemap, jekyll-seo-tag]
-
-#plugins_dir: [jekyll-sitemap, jekyll-seo-tag]
+plugins: [jekyll-sitemap, jekyll-seo-tag, jekyll-last-modified-at]
