@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How we do Kanban"
+title:  "Social unit testing with stubs and spies"
 ---
 
 ## Contents
@@ -8,4 +8,3 @@ title:  "How we do Kanban"
 
 * Table of Contents
 {:toc}
-
