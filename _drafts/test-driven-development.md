@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Social unit testing with stubs and spies"
+title:  "Thougts on unit testing"
 ---
 
 ## Contents

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Testing"
+title:  "Mocks are only one type of test double"
 ---
 
 ## Contents
@@ -8,3 +8,5 @@ title:  "Testing"
 
 * Table of Contents
 {:toc}
+
+## 

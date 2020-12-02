@@ -11,7 +11,7 @@ title:  "Effective Code Reviews"
 
 ## Why do code reviews?
 
-__The best code review is the one done as you create the code.__ Pair or mob programming creates a so short feedback loop that most issues won't even make it into the code, let alone into the code review.
+__The best code review is the one done as you create the code.__ Pair or mob programming creates a so short feedback loop that most issues won't even make it into the code, let alone into the code review. That's the way I prefer to work, but if you insist on doing code reviews, you consider the advice below.
 
 ## Good practices for reviews
 
