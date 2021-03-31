@@ -10,7 +10,7 @@ title:  "Thoughts on unit testing"
 {:toc}
 
 ## The power of a name
-What should this code do? That's a question that helps us focus on what's important, the very reason for the codes existance. Shouldn't the answer to that question be among the most important documentation we have? The first thing that comes to your mind might be how to make the code communicate its intent by design, but shouldn't your tests describe it in an even more easily understandable, short and consise way? How do you write tests that?
+What should this code do? That's a question that helps us focus on what's important, the very reason for the codes existance. Shouldn't the answer to that question be among the most important documentation we have? The first thing that comes to your mind might be how to make the code communicate its intent by design, but shouldn't your tests describe it in an even more easily understandable, short and consise way? How do you write tests that communicate intent?
 
 ## Test names should document the behavior
 A trick I learned from [Sandro Mancuso](https://twitter.com/sandromancuso) a while ago is to make the names of both the test class and the test methods a readable specification of the behavior. What _should_ this code do? A currency converter should... ACurrencyConverterShould. _What_ should this code do? Return amount according to conversion rate... return_amount_according_to_conversion_rate(). Together, they create a very readable sentence, a living documentation of what the code should do:
