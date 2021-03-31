@@ -224,45 +224,10 @@ pre > code {
   padding: 0 0.75rem;
 }
 
-.sharing {
-  text-align: center;
-}
-
 .date {
   text-align: right;
   font-size: 75%;
   font-style: italic;
-}
-
-@media (max-width: 635px) {
-.sharing {
- font-size: 85%;
- }
-}
-
-/* This gets Google to fall into place */
-.social {
- text-align: right;
-}
-
-.topsocial {
-	margin-bottom: 5em;
-}
-
-/* This gets Facebook to fall into place */
-.social iframe {
-	vertical-align: middle;
-}
-
-/* Set an optional width for your button wrappers */
-.social span {
-	display: inline-block;
-	width: 110px;
-}
-
-/* Adjust the widths individually if you like */
-.social .google {
-	width: 75px;
 }
 
 .button {
@@ -283,12 +248,4 @@ pre > code {
 	cursor: pointer;
 	text-decoration: none;
 	transition: 0.5s;
-}
-
-.Facebook {
-	transform: scale(1.25);
-}
-
-.sharing-buttons {
-	width: 100%;
 }

@@ -5,8 +5,6 @@ description: A blog about software engineering, tools and agile practices.
 permalink: /:title/
 
 font-awesome: false # make this false if you don't need font-awesome
-social-sharing: false # make this false if you don't need rrssb
-jquery: false
 
 # Build settings
 markdown: kramdown

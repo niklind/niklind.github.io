@@ -10,10 +10,7 @@
       <p><a href="{{ site.baseurl }}/">Back to the blog</a></p>
       {{ content }}
     </article>
-    {% if site.social-sharing %}{% include sharing.html %}{% endif %}
     {% include footer.html %}
-    {% if site.social-sharing %}<script src="{{ site.baseurl }}/scripts/jquery.min.js"></script>{% endif %}
-    {% if site.jquery %}<script src="{{ site.baseurl }}/scripts/rrssb.min.js"></script>{% endif %}
   </div>
 </body>
 </html>
