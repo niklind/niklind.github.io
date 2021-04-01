@@ -17,10 +17,10 @@ Not very interesting as a whole, but there are a few things to note at least.
 
 ### String indentation and transforms
 ```java
-“text”.indent(2); // adds two spaces
-“text”.indent(-2); // removes two spaces
+"text".indent(2); // adds two spaces
+"text".indent(-2); // removes two spaces
 
-String transformed = “text”.transform(value ->
+String transformed = "text".transform(value ->
       new StringBuilder(value).reverse().toString()
 );
 ```
@@ -109,7 +109,7 @@ if (obj instanceof String) {
 record Point(int x, int y) {
   Point {
     if (x != y)  // implicit constructor parameters
-      throw new IllegalArgumentException(“...”));
+      throw new IllegalArgumentException("..."));
     }
 }
 
