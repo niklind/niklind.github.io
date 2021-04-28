@@ -10,3 +10,4 @@ title:  "Programming environment tips"
 {:toc}
 
 ## Programming environment tips
+SonarLint

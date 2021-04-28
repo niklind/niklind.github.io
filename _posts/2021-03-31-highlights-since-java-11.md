@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Highlights since Java 11"
+title:  "Highlights of new features between Java 11 and 16"
 ---
 
 ## Contents
@@ -99,8 +99,8 @@ Records are finally here! Pattern matching is a nice addition, although in itsel
 
 ### Pattern Matching for instanceof (JEP 394)
 ```java
-if (obj instanceof String) {
-    obj.getBytes() // Use obj as String without casting
+if (obj instanceof String s) {
+    s.getBytes() // Use s instead of obj
 }
 ```
 

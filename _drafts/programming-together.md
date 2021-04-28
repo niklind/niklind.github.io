@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mob programming"
+title:  "Programming together"
 ---
 
 ## Contents
@@ -8,5 +8,7 @@ title:  "Mob programming"
 
 * Table of Contents
 {:toc}
+
+## Pair programming
 
 ## Mob programming
