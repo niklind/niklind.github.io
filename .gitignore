@@ -180,5 +180,3 @@ project/plugins/project/
 # End of https://www.gitignore.io/api/osx,java,scala,python,maven
 
 _site/
-
-Gemfile.lock
