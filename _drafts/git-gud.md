@@ -13,8 +13,10 @@ title:  "Git good"
 
 Git is a wonderful tool. It does take some getting used to though, and it's easy to end up in a hole so deep you just give up and rewrite the needed changes. If you're still stuck pasting around commands and hoping they do what you think, this post may be for you.
 
-### Large merge conflicts 
+### Large merge conflicts
 
-Most large merge conflicts are caused by merging branches too seldom. "If it hurts, do it more often" to quote the well known mantra of continuous delivery advocates. The root cause is often having a rigid verification process revolving around release versioning and quality assurance environments. This fits well with selecting a clunky branching strategy like [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow), often leading to long release cycles and big merging points. If you feel this hits home with your situation, I'd suggest reading up on [continuous delivery](), [DevOps]() and [GitHub flow](). 
+Most large merge conflicts are caused by merging branches too seldom. "If it hurts, do it more often" to quote the well known mantra of continuous delivery advocates. The root cause is often having a rigid verification process revolving around release versioning and quality assurance environments. This fits well with selecting a clunky branching strategy like [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow), often leading to long release cycles and big merging points. If you feel this hits home with your situation, I'd suggest reading up on [trunk-based development](). 
 
 In other cases, this is caused by accidentally rewriting history. Anyone versed in time travel knows that is a terrible idea, and in git it's often translated to "rebase everything". [The golden rule of rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing) is to _never_ do it on a public branch.
+
+### Unreadable history
