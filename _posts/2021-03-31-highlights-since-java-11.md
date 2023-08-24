@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Highlights of new features between Java 11 and 16"
+title:  "Highlights of new features between Java 11 and 17"
 ---
 
 ## Contents
@@ -81,16 +81,6 @@ String html = """
               """;
 ```
 
-### Sealed Classes (JEP 360)
-```java
-public abstract sealed class Person permits Employee, Manager {} 
-// only allows Employee and Manager as sub-classes. 
-// Also works for interfaces
-
-public final class Employee extends Person {}
-public non-sealed class Manager extends Person {}
-```
-
 ### New garbage collection features (JEP 377 and JEP 379)
 ZGC and Shenandoah are no longer experimental, although G1 is still the default.
 
@@ -136,3 +126,19 @@ Create native install packages (msi, deb, rpm etc.) using the JDK.
 Integer a = new Integer(0); // Warning! 
 // Should use Integer.valueOf(0) or auto-boxing with 0
 ```
+
+## Java 17 (LTS)
+Sealed classes and stong encapsulation - mainly news for library maintainers, but expect to have to update dependencies!
+
+### Sealed Classes (JEP 360)
+```java
+public abstract sealed class Person permits Employee, Manager {} 
+// only allows Employee and Manager as sub-classes. 
+// Also works for interfaces
+
+public final class Employee extends Person {}
+public non-sealed class Manager extends Person {}
+```
+
+### Encapsulate JDK Internals (JEP 403)
+Some of your dependencies might still use JDK internals using the relaxed encapsulation - this will not be possible starting from Java 17, so expect to update accordingly.
